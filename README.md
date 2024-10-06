@@ -1,12 +1,30 @@
+# CIS 3296 Proof of Concept
 
-This template provides an example of how large, production-level apps should be built.
-There are a few things to note about this code:
+## Versions & Packages
 
-1) Most of the functionality is implemented using [modules](https://shiny.posit.co/py/docs/workflow-modules.html).
-Which are extremely important for breaking your application into small blocks which can be predictably assembled into larger applications.
+**This program uses Shiny version 0.7.0, pandas version 2.2.0, and matplotlib version 3.8.2. 
+shiny, pandas, and matplotlib must be installed for the program to compile and run on your machine.**
 
-2) We pass a `reactive.Calc` down to the modules, and call it within the module to return the data frame.
-This is an example of [module communication](https://shiny.posit.co/py/docs/workflow-module-communication.html) which is how you can share reactive objects betwene modules and the main application context.
+### shiny
+```
+ pip install shiny
+```
+### pandas
+```
+ pip install pandas
+```
+### matplotlib
+```
+ pip install matplotlib
+```
 
-3) The app uses a css file to implement custom styling.
-Shiny apps can be fully styled with CSS and you can learn more about the options [here](https://shiny.posit.co/py/docs/ui-styling.html).
+Code was written and compiled using PyCharm version 2023.4, Python version 3.9.6, and the operating system the program was compiled on is macOS v12.6
+
+## Usage
+
+To run the program, clone the repository and open in an IDE of your choice. 
+You can start the app from your terminal using the command 
+```
+ shiny run --reload app.py
+```
+This should begin the program on your localhost. 
