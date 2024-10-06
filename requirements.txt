@@ -1,5 +1,3 @@
 numpy
 pandas
-plotnine
-scikit-learn
 shiny

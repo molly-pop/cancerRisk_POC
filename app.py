@@ -5,9 +5,6 @@ from modules import data_view_server, data_view_ui, risk_server, risk_ui
 
 from shiny import App, Inputs, Outputs, Session, reactive, ui
 
-df = pd.read_csv(Path(__file__).parent / "scores.csv")
-
-
 app_ui = ui.page_navbar(
     risk_ui("tab1"),
     data_view_ui("tab2"),
